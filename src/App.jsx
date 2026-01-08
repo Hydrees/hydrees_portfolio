@@ -13,16 +13,20 @@ function App() {
 
   return (
     <Router>
-      <div className='bg-[#f5f7fa] text-white min-h-screen flex flex-col'>
+      <div className="text-white min-h-screen flex flex-col bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(248, 250, 252, 100), rgba(15, 23, 42, 0.25)), url('/bg1.jpg')",
+        }}>
         <Navbar />
-        <main className='flex-grow'>
+        <div >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </main>
+        </div>
         <Footer />
       </div>
     </Router>

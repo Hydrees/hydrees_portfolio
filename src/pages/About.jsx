@@ -13,10 +13,10 @@ export default function About() {
         "Express (Learning)",
     ];
     return (
-        <section className="relative flex flex-col md:flex-row items-center justify-center px-6 pt-10  min-h-screen  text-gray-300 overflow-hidden bg-[#f5f7fa]">
+        <section className="bg-[#f5f7fa] md:bg-transparent  relative flex flex-col md:flex-row items-center justify-center px-6 pt-10  min-h-screen  text-gray-300 overflow-hidden  ">
 
             {/* background motion */}
-            <motion
+            {/* <motion
                 className="absolute inset-0 -z-10 bg-gradient-to-tr from-blue-800 via-gray-900 to-black opacity-60"
                 animate={{ backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"], }}
                 transition={{
@@ -25,11 +25,11 @@ export default function About() {
                     repeat: Infinity,
                 }}
                 style={{ backgroundSize: "400% 400%", filter: "blur(50px)", }}
-            />
+            /> */}
 
             {/* profile picture */}
             <motion.div
-                className="w-100 h-100 round overflow-hidden border-4 border-[#e5e7eb] shadow-lg mb-6 md:mb-0 md:mr-10"
+                className="flex items-center justify-center w-100 h-100 round overflow-hidden border-4 border-[#e5e7eb] shadow-lg mb-6 md:mb-0 md:mr-10 "
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.8 }}
@@ -37,7 +37,7 @@ export default function About() {
                 <img
                     src={profileImg}
                     alt="Profile"
-                    className="w-full h-full object-cover" />
+                    className="flex w-80 h-80 md:w-full md:h-full object-cover border-rounded rounded-full " />
             </motion.div>
 
             {/* About text */}
@@ -48,9 +48,9 @@ export default function About() {
                 transition={{ delay: 0.3, duration: 0.8 }}
             >
                 <h2 className="text-3xl font-bold text-blue-400 mb-4">About Me</h2>
-                <p className="mb-4 text-[#475569]">I am <span className="text-blue-400 font-semibold">IDRIS ABDULSALAM</span>, A passionate <strong>Front-end Developer</strong> currently expanding my knowledge into <strong>Back-end Development</strong>. I love building functional, visually appealing, and user-focused web applications.</p>
+                <p className="mb-4 text-[#1e2a3a]">I am <span className="text-blue-400 font-semibold">ABDULSALAM IDRIS</span>, A <strong>Front-end Developer</strong> who builds modern, responsive, and functional web applications.</p>
 
-                <p className="text-[#475569]">I am constantly learning and experimenting with new technologies to improve performance, maintainability, and design quality.</p>
+                <p className="text-[#1e2a3a]">I dont just design interfaces, I focus on usability, performance and clean implementation. I am currently growing into <strong>Back-end Development</strong> to become a well-rounded full-stack developer and deliver more complete solutions.</p>
 
                 {/* skill list */}
                 <h3 className="text-xl font-semibold text-blue-400 mt-6 mb-3">Skills</h3>

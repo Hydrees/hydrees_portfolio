@@ -58,7 +58,7 @@ export default function Projects() {
 
     return (
         <section
-            className="min-h-screen bg-[#f5f7fa] flex flex-col items-center  py-25 px-6">
+            className="min-h-screen  flex flex-col items-center  py-25 px-6">
             {/* animated gradient background */}
             <motion.div
                 className="absolute inset-0 -z-10 bg-gradient-to-br from-gray-900 via-blue-900 to-black opacity-60"

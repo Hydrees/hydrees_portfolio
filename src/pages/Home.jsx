@@ -8,8 +8,9 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
     const texts = [
-        "Idris Abdulsalam...",
-        " A Front-end Developer."
+        "Abdulsalam Idris...",
+        "A Front-end Developer...",
+        "Building modern, responsive, and user-centered web applications."
 
 
     ];
@@ -46,15 +47,14 @@ export default function Home() {
 
 
     return (
-        <section className="relative flex flex-col items-center justify-center text-center py- px-4 overflow-hid min-h-screen bg-[#f5f7fa]">
+        <section className="relative flex flex-col items-center justify-center text-center py- px-4 overflow-hid min-h-screen ">
             <BackgroundMotion />
             <motion.h1 className="text-4xl sm:text-6xl font-bold mb-4 relative z-10 text-[#0f172a]" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
                 Hi, I am <span className="text-blue-400">{text}</span>
             </motion.h1>
 
-            <motion.p className="text-[#475569] max-w-xl mb-6 relative z-10" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}>
-                A result-driven Front-end Developer & Back-end enthusiast building clean,
-                modern and impactful web experiences.
+            <motion.p className="text-[#1e2a3a] font-bold max-w-xl mb-6 relative z-10" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.7 }}>
+                I build modern, responsive web applications that solve real problems and deliver results. As a Front-End Developer with growing Back-End skills, I focus on performance, usability and clean code that scales.
             </motion.p>
 
             <Link
