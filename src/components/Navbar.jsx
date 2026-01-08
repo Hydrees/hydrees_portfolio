@@ -17,7 +17,7 @@ export default function Navbar() {
     return (
         <motion.nav className="w-full fixed top-0 left-0 z-50 backdrop-blur-md shadow-sm bg-[#f5f7fa]" initial={{ y: -40, opacity: 0 }} animate={{ y: 0, opacity: 1 }}>
             <div className="max-w-5xl mx-auto flex items-center justify-between px-5 py-4">
-                <h1 className="text-2xl font-bold text-blue-400">dev_studio</h1>
+                <h1 className="text-2xl font-bold text-blue-400">Hydrees</h1>
 
                 <ul className="hidden md:flex items-center space-x-8 text-white">
                     {links.map(link => (

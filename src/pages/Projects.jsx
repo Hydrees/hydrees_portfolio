@@ -7,10 +7,17 @@ import Dailynine from "../assets/daily_nine.jpg";
 import Counter from "../assets/counter.jpg";
 import Chef from "../assets/chef.jpg";
 import vote from "../assets/vote.jpg";
+import eto from "../assets/etoAriya.jpg";
 
 
 export default function Projects() {
     const projects = [
+        {
+            title: "etoAriya (Event planning platform)",
+            description: "A real-world digital event management platform developed as a final project, combining front-end development with backend fundamentals to deliver a live, production-deployed solution for event organizers, attendees and vendors. Built with HTML, Tailwind CSS, JavaScript, React, Node.js, APIs, Database concepts",
+            image: eto,
+            link: "https://dev.etoariya.com.ng/"
+        },
         {
             title: "SAPA APP (fundraising platform)",
             description: "A fundraising web platform developed as a capstone project for frontend mastery, designed to enable users to create, manage, and support fundraising campaings efficiently. Built with HTML, TAILWIND CSS, JavaScript and React",
